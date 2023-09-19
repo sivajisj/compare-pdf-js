@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- For responsiveness -->
+    <title>Compare PDF Texts</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Include the CSS styles -->
+</head>
+<body>
+
+<!-- Navbar -->
+<header>
+    <nav class="navbar">
+        <div class="logo">PDFComparer</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+    <h2>Compare your PDFs with ease</h2>
+    <p>Upload two PDF files and quickly see if their contents match.</p>
+</section>
+
+<!-- Main Content -->
+<div class="container">
+    <h1>Compare PDF Texts</h1>
+
+    <input type="file" id="pdfInput1" accept=".pdf">
+    <input type="file" id="pdfInput2" accept=".pdf">
+    <button onclick="comparePDFs()">Compare</button>
+
+    <div id="result"></div>
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2023 PDFComparer. All rights reserved.</p>
+</footer>
+
+<!-- Include PDF.js library -->
+<script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+<!-- Include our script -->
+<script src="script.js"></script>
+
+</body>
+</html>
